@@ -6,15 +6,15 @@
   <title>Pranzo del 1 maggio</title>
   <style>
     :root {
-      --bg: #14110f;
-      --panel: rgba(34, 27, 22, 0.88);
-      --panel-strong: rgba(47, 36, 27, 0.96);
-      --gold: #f0b45a;
-      --gold-2: #ffcb7a;
-      --cream: #f7eedf;
-      --muted: #d4c2ae;
-      --line: rgba(255, 203, 122, 0.18);
-      --shadow: 0 12px 28px rgba(0,0,0,.34);
+      --bg: #f7f0e6;
+      --panel: rgba(255, 250, 243, 0.96);
+      --panel-strong: rgba(250, 242, 232, 0.98);
+      --gold: #d59b4d;
+      --gold-2: #e8ba74;
+      --cream: #4e3728;
+      --muted: #7c6250;
+      --line: rgba(213, 155, 77, 0.22);
+      --shadow: 0 12px 28px rgba(93, 64, 31, .10);
       --radius: 22px;
     }
 
@@ -24,8 +24,8 @@
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
       background:
-        radial-gradient(circle at top, rgba(255,184,77,0.15), transparent 36%),
-        linear-gradient(180deg, #181210 0%, #100c0a 100%);
+        radial-gradient(circle at top, rgba(232,186,116,0.18), transparent 36%),
+        linear-gradient(180deg, #fbf6ef 0%, #f4ede3 100%);
       color: var(--cream);
       min-height: 100vh;
     }
@@ -63,6 +63,7 @@
       gap: 12px;
       padding: 12px 0 8px;
       backdrop-filter: blur(10px);
+      background: rgba(251, 246, 239, .72);
     }
 
     .brand {
@@ -86,8 +87,8 @@
     }
 
     .menu-btn {
-      border: 1px solid rgba(255,203,122,.25);
-      background: rgba(35, 28, 24, .92);
+      border: 1px solid rgba(213,155,77,.25);
+      background: rgba(255, 250, 243, .96);
       color: var(--cream);
       width: 48px;
       height: 48px;
@@ -135,7 +136,7 @@
       width: min(84vw, 340px);
       height: 100vh;
       padding: 18px;
-      background: linear-gradient(180deg, rgba(31,24,20,.98), rgba(22,17,14,.98));
+      background: linear-gradient(180deg, rgba(255,250,243,.98), rgba(246,238,227,.98));
       border-left: 1px solid var(--line);
       box-shadow: -12px 0 32px rgba(0,0,0,.38);
       transform: translateX(100%);
@@ -306,14 +307,24 @@
       gap: 14px;
     }
 
+    .menu-grid {
+      grid-template-columns: 1fr;
+    }
+
     .menu-grid { grid-template-columns: 1fr; }
 
     .menu-card,
     .person-card {
-      background: linear-gradient(180deg, rgba(255,255,255,.035), rgba(255,255,255,.02));
+      background: linear-gradient(180deg, rgba(255,255,255,.88), rgba(252,246,238,.74));
       border: 1px solid var(--line);
       border-radius: 20px;
       padding: 14px;
+    }
+
+    .menu-card p {
+      margin: 0;
+      white-space: pre-line;
+      line-height: 1.75;
     }
 
     .menu-card h3,
@@ -441,6 +452,26 @@
       height: auto;
     }
 
+
+    .thanks-section {
+      margin-top: 18px;
+      padding: 10px 0 24px;
+    }
+
+    .thanks-wrap {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: transparent;
+    }
+
+    .thanks-gif {
+      width: min(180px, 42vw);
+      height: auto;
+      image-rendering: pixelated;
+      display: block;
+    }
+
   </style>
 </head>
 <body>
@@ -521,14 +552,57 @@
     <section id="menu">
       <div class="section-head">
         <h2>Menù</h2>
-        <p class="lead">Sezione pronta per essere completata appena mi dai i piatti definitivi.</p>
+        <p class="lead">Le portate del pranzo, raccontate con un tocco solenne e affettuoso.</p>
       </div>
       <div class="menu-grid">
-        <article class="menu-card"><h3>Aperitivo</h3><p>Da definire</p></article>
-        <article class="menu-card"><h3>Primo</h3><p>Da definire</p></article>
-        <article class="menu-card"><h3>Secondo</h3><p>Da definire</p></article>
-        <article class="menu-card"><h3>Contorno</h3><p>Da definire</p></article>
-        <article class="menu-card"><h3>Dessert</h3><p>Da definire</p></article>
+        <article class="menu-card"><h3>Aperitivo</h3><p>Nel calice arde un tramonto frizzante,
+tra note d’agrumi e riflesso brillante.
+
+D’intorno riposano bocconi minuti,
+croccanti, salati, vezzosi tributi.
+
+È un piccolo rito di gaudio e colore,
+che schiude la fame e rallegra il cuore.</p></article>
+        <article class="menu-card"><h3>Primo</h3><p>Si mostra austera in crosta dorata,
+con salsa vermiglia e mollica infocata.
+
+Di cacio filante e carni odorose,
+ha fasto di mense antiche e festose.
+
+Dal ventre suo caldo vapora il calore,
+qual dono di casa, di ferro e d’amore.
+
+Sontuosa riposa, regale vivanda,
+tra echi di festa, d’abbondanza e locanda.</p></article>
+        <article class="menu-card"><h3>Secondo</h3><p>Si leva dorato con nobile vanto,
+dal cuore nascosto, ricco e fragranto.
+
+Di morbida pasta e ripieno gagliardo,
+ha vezzo di casa e conforto lombardo.
+
+Nel caldo suo fiato, sincero e sincopato,
+si sente il ristoro d’un desco imbandito e amato.</p></article>
+        <article class="menu-card"><h3>Contorno</h3><p>Si desta novella, gentile e rugiadosa,
+tra fronde leggere d’un’alba odorosa.
+
+Ha fresco respiro, composto e garbato,
+qual dono gentile d’un orto beato.</p></article>
+        <article class="menu-card"><h3>Dessert</h3><p>Si mostrano in fila, sì piccoli e adorni,
+qual gemme zuccherine da feste e da giorni.
+
+Di crema, di glassa, di vezzo e splendore,
+recano in boccone delicatezza e fulgore.
+
+Leggiadri riposano su vassoi d’argento,
+portando dolcezze di festa e contento.</p></article>
+        <article class="menu-card"><h3>Bevande</h3><p>Nel calice scende vigor rubino,
+tra note festose e nobile inchino.
+
+Nel vetro più scuro, vivace e frizzante,
+si desta una dolcezza briosa e brillante.
+
+E accanto, sì pura, limpida e piana,
+riposa la fonte più fresca e sovrana.</p></article>
       </div>
     </section>
 
